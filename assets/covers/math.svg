@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 560" role="img" aria-labelledby="title">
+  <title id="title">Math and Mental Ability book cover</title>
+  <rect width="420" height="560" fill="#161d2f"/>
+  <g fill="none" stroke="#2f9ee9" stroke-width="2" opacity=".35">
+    <path d="M0 80H420M0 150H420M0 220H420M0 290H420M0 360H420M0 430H420"/>
+    <path d="M70 0V560M140 0V560M210 0V560M280 0V560M350 0V560"/>
+  </g>
+  <text x="48" y="116" fill="#baf4d8" font-family="Arial" font-size="28" font-weight="700">BCS QUANT</text>
+  <text x="48" y="224" fill="#ffffff" font-family="Arial" font-size="76" font-weight="900">Math</text>
+  <text x="48" y="292" fill="#ffffff" font-family="Arial" font-size="42" font-weight="900">& Mental Ability</text>
+  <text x="58" y="404" fill="#f6c34f" font-family="Arial" font-size="58" font-weight="900">x + y = ?</text>
+</svg>

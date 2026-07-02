@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 560" role="img" aria-labelledby="title">
+  <title id="title">Geography and Environment book cover</title>
+  <rect width="420" height="560" fill="#17335b"/>
+  <path d="M0 300 C80 220 142 330 220 250 C290 178 340 250 420 185 L420 560 L0 560 Z" fill="#0d8b57"/>
+  <path d="M0 370 C120 300 190 420 420 300 L420 560 L0 560 Z" fill="#2f9ee9" opacity=".55"/>
+  <circle cx="326" cy="104" r="56" fill="#f6c34f"/>
+  <text x="42" y="120" fill="#ffffff" font-family="Arial" font-size="28" font-weight="700">BCS MAPS</text>
+  <text x="42" y="248" fill="#ffffff" font-family="Arial" font-size="55" font-weight="900">Geography</text>
+  <text x="42" y="306" fill="#baf4d8" font-family="Arial" font-size="43" font-weight="900">Environment</text>
+</svg>

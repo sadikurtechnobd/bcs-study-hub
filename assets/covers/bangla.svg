@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 560" role="img" aria-labelledby="title">
+  <title id="title">BCS Bangla Foundation book cover</title>
+  <defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#0d8b57"/><stop offset="1" stop-color="#172033"/></linearGradient></defs>
+  <rect width="420" height="560" fill="url(#g)"/>
+  <circle cx="336" cy="70" r="92" fill="#f6c34f" opacity=".24"/>
+  <rect x="42" y="54" width="336" height="452" rx="18" fill="#ffffff" opacity=".1" stroke="#ffffff" stroke-opacity=".28"/>
+  <text x="52" y="135" fill="#baf4d8" font-family="Arial" font-size="28" font-weight="700">BCS PREP</text>
+  <text x="52" y="225" fill="#ffffff" font-family="Arial" font-size="62" font-weight="900">Bangla</text>
+  <text x="52" y="284" fill="#ffffff" font-family="Arial" font-size="46" font-weight="900">Foundation</text>
+  <rect x="52" y="326" width="250" height="12" rx="6" fill="#f6c34f"/>
+  <rect x="52" y="360" width="190" height="10" rx="5" fill="#baf4d8"/>
+  <text x="52" y="454" fill="#ffffff" font-family="Arial" font-size="24" font-weight="700">Grammar + Literature</text>
+</svg>

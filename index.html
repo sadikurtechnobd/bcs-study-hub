@@ -1,11 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BCS Study Hub | Books & Practice Exams</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>hello sadikur<h1>
+  <div class="app-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="BCS Study Hub home">
+        <span class="brand-logo">BCS</span>
+        <span>
+          <strong>Study Hub</strong>
+          <small>Bangladesh Civil Service Prep</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-menu" aria-label="Primary navigation">
+        <a href="#books">Books</a>
+        <a href="#categories">Subjects</a>
+        <a href="pages/exam.html">Exam</a>
+        <a href="#about">Routine</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">BCS foundation masterclass</p>
+          <h1>Prepare smarter for preliminary, written, and viva.</h1>
+          <p class="hero-text">Explore curated BCS preparation books, review subject topics, and practice a full sample MCQ exam in a clean study-first interface.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#books">Browse Books</a>
+            <a class="btn btn-ghost" href="pages/exam.html">Start Exam</a>
+          </div>
+        </div>
+
+        <div class="hero-panel" aria-label="Study progress preview">
+          <div class="hero-card hero-card-main">
+            <span class="status-pill">Live prep</span>
+            <h2>Daily Target</h2>
+            <strong>20 MCQs</strong>
+            <p>Question set with timer, score, percentage, and pass status.</p>
+          </div>
+          <div class="hero-metrics">
+            <div>
+              <strong>08</strong>
+              <span>Book modules</span>
+            </div>
+            <div>
+              <strong>12</strong>
+              <span>Core subjects</span>
+            </div>
+            <div>
+              <strong>60%</strong>
+              <span>Pass mark</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="categories" class="category-bar" aria-label="Book categories">
+        <a href="#books">বাংলা</a>
+        <a href="#books">ইংরেজি</a>
+        <a href="#books">বাংলাদেশ</a>
+        <a href="#books">আন্তর্জাতিক</a>
+        <a href="#books">ভূগোল</a>
+        <a href="#books">বিজ্ঞান</a>
+        <a href="#books">কম্পিউটার</a>
+        <a href="#books">গণিত</a>
+        <a href="#books">নৈতিকতা</a>
+      </section>
+
+      <section id="books" class="section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Study library</p>
+            <h2>BCS preparation books</h2>
+          </div>
+          <p>Inspired by clean media-card layouts, adapted into an educational book shelf with subject tags and progress-focused actions.</p>
+        </div>
+
+        <div class="toolbar">
+          <label class="search-box" for="bookSearch">
+            <span>Search</span>
+            <input id="bookSearch" type="search" placeholder="Search book, subject, or author">
+          </label>
+          <label class="select-box" for="subjectFilter">
+            <span>Subject</span>
+            <select id="subjectFilter">
+              <option value="all">All subjects</option>
+            </select>
+          </label>
+        </div>
+
+        <div id="bookGrid" class="book-grid" aria-live="polite"></div>
+      </section>
+
+      <section id="about" class="section split-section">
+        <div>
+          <p class="eyebrow">Simple routine</p>
+          <h2>Learn, practice, revise, repeat.</h2>
+          <p class="muted">This frontend is intentionally static for now, but the structure mirrors a future API-ready app: data is separated from rendering, page scripts are modular, and book/exam content can later come from a database.</p>
+        </div>
+        <div class="routine-list">
+          <article>
+            <span>01</span>
+            <h3>Read one focused chapter</h3>
+            <p>Take compact notes from a single topic instead of jumping between subjects.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Practice timed MCQs</h3>
+            <p>Build speed with a 20-question sample exam and immediate scoring.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Review weak topics</h3>
+            <p>Use wrong answers as a revision checklist for the next study block.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>BCS Study Hub</p>
+      <p>Static frontend prototype built with HTML, CSS, and vanilla JavaScript.</p>
+    </footer>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
