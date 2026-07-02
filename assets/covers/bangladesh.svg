@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 560" role="img" aria-labelledby="title">
+  <title id="title">Bangladesh Affairs Complete book cover</title>
+  <rect width="420" height="560" fill="#0a4f36"/>
+  <circle cx="286" cy="152" r="82" fill="#d94b4b"/>
+  <rect x="48" y="320" width="324" height="128" rx="8" fill="#ffffff" opacity=".12"/>
+  <text x="48" y="110" fill="#ffffff" font-family="Arial" font-size="28" font-weight="700">BCS GUIDE</text>
+  <text x="48" y="238" fill="#ffffff" font-family="Arial" font-size="58" font-weight="900">Bangladesh</text>
+  <text x="48" y="296" fill="#baf4d8" font-family="Arial" font-size="48" font-weight="900">Affairs</text>
+  <text x="68" y="372" fill="#ffffff" font-family="Arial" font-size="24" font-weight="700">Constitution</text>
+  <text x="68" y="410" fill="#ffffff" font-family="Arial" font-size="24" font-weight="700">History</text>
+  <text x="68" y="448" fill="#ffffff" font-family="Arial" font-size="24" font-weight="700">Governance</text>
+</svg>

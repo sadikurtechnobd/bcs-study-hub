@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 560" role="img" aria-labelledby="title">
+  <title id="title">General Science and ICT book cover</title>
+  <defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#0d8b57"/><stop offset="1" stop-color="#2f9ee9"/></linearGradient></defs>
+  <rect width="420" height="560" fill="url(#g)"/>
+  <circle cx="210" cy="255" r="24" fill="#fff"/>
+  <g fill="none" stroke="#fff" stroke-width="6" opacity=".8">
+    <ellipse cx="210" cy="255" rx="128" ry="46" transform="rotate(24 210 255)"/>
+    <ellipse cx="210" cy="255" rx="128" ry="46" transform="rotate(-24 210 255)"/>
+    <ellipse cx="210" cy="255" rx="46" ry="128"/>
+  </g>
+  <text x="44" y="112" fill="#e9fbff" font-family="Arial" font-size="28" font-weight="700">BCS SCIENCE</text>
+  <text x="44" y="428" fill="#ffffff" font-family="Arial" font-size="54" font-weight="900">Science</text>
+  <text x="44" y="486" fill="#ffffff" font-family="Arial" font-size="54" font-weight="900">& ICT</text>
+</svg>

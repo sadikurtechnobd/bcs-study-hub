@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice Exam | BCS Study Hub</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="site-header">
+      <a class="brand" href="../index.html" aria-label="BCS Study Hub home">
+        <span class="brand-logo">BCS</span>
+        <span>
+          <strong>Study Hub</strong>
+          <small>Bangladesh Civil Service Prep</small>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-menu" aria-label="Primary navigation">
+        <a href="../index.html#books">Books</a>
+        <a href="../index.html#categories">Subjects</a>
+        <a class="active" href="exam.html">Exam</a>
+        <a href="../index.html#about">Routine</a>
+      </nav>
+    </header>
+
+    <main class="exam-shell">
+      <aside class="exam-sidebar">
+        <div class="timer">
+          <span>Time remaining</span>
+          <strong id="timerText">20:00</strong>
+        </div>
+        <div id="questionMap" class="question-map" aria-label="Question navigation"></div>
+      </aside>
+
+      <section class="exam-main">
+        <div class="exam-topline">
+          <p id="questionCounter" class="eyebrow">Question 1 of 20</p>
+          <button id="submitBtn" class="btn btn-primary" type="button">Submit Exam</button>
+        </div>
+        <h1 id="questionText" class="exam-question">Question text</h1>
+        <div id="optionList" class="option-list"></div>
+        <div class="exam-controls">
+          <button id="prevBtn" class="btn btn-light" type="button">Previous</button>
+          <button id="nextBtn" class="btn btn-light" type="button">Next</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>BCS Study Hub</p>
+      <p>20-question static sample exam with countdown timer.</p>
+    </footer>
+  </div>
+
+  <script src="../js/data.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/exam.js"></script>
+</body>
+</html>

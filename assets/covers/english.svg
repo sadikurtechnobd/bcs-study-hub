@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 560" role="img" aria-labelledby="title">
+  <title id="title">English Grammar Mastery book cover</title>
+  <defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#2f9ee9"/><stop offset="1" stop-color="#120a2f"/></linearGradient></defs>
+  <rect width="420" height="560" fill="url(#g)"/>
+  <path d="M0 420 C120 340 230 510 420 400 L420 560 L0 560 Z" fill="#ffffff" opacity=".13"/>
+  <rect x="44" y="58" width="332" height="444" rx="18" fill="none" stroke="#ffffff" stroke-opacity=".35"/>
+  <text x="52" y="132" fill="#d9efff" font-family="Arial" font-size="28" font-weight="700">BCS ENGLISH</text>
+  <text x="52" y="226" fill="#ffffff" font-family="Arial" font-size="60" font-weight="900">Grammar</text>
+  <text x="52" y="286" fill="#ffffff" font-family="Arial" font-size="48" font-weight="900">Mastery</text>
+  <text x="52" y="378" fill="#f6c34f" font-family="Arial" font-size="34" font-weight="900">Rules. Usage. Speed.</text>
+  <circle cx="320" cy="430" r="42" fill="#baf4d8" opacity=".86"/>
+</svg>
