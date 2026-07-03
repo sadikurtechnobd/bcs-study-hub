@@ -5,8 +5,11 @@ let currentQuestion = 0;
 let remainingSeconds = EXAM_DURATION_SECONDS;
 let timerId;
 const answers = Array(BCS_QUESTIONS.length).fill(null);
-const startedAt = Date.now();
+let startedAt = null;
 
+const examIntro = document.querySelector("#examIntro");
+const examShell = document.querySelector(".exam-shell");
+const startExamBtn = document.querySelector("#startExamBtn");
 const timerText = document.querySelector("#timerText");
 const questionCounter = document.querySelector("#questionCounter");
 const questionText = document.querySelector("#questionText");
@@ -70,7 +73,7 @@ function getExamResult() {
   const total = BCS_QUESTIONS.length;
   const wrong = total - correct;
   const percentage = Math.round((correct / total) * 100);
-  const timeTakenSeconds = Math.max(1, Math.round((Date.now() - startedAt) / 1000));
+  const timeTakenSeconds = startedAt ? Math.max(1, Math.round((Date.now() - startedAt) / 1000)) : 0;
 
   return {
     total,
@@ -99,6 +102,15 @@ function tickTimer() {
   }
 }
 
+function startExam() {
+  startedAt = Date.now();
+  examIntro.hidden = true;
+  examShell.hidden = false;
+  timerText.textContent = formatTime(remainingSeconds);
+  timerId = setInterval(tickTimer, 1000);
+  renderQuestion();
+}
+
 prevBtn.addEventListener("click", () => {
   currentQuestion = Math.max(0, currentQuestion - 1);
   renderQuestion();
@@ -110,7 +122,8 @@ nextBtn.addEventListener("click", () => {
 });
 
 submitBtn.addEventListener("click", submitExam);
+startExamBtn.addEventListener("click", startExam);
 
 timerText.textContent = formatTime(remainingSeconds);
-timerId = setInterval(tickTimer, 1000);
+examShell.hidden = true;
 renderQuestion();

@@ -25,9 +25,17 @@
 
       <nav class="nav-menu" aria-label="Primary navigation">
         <a href="#books">Books</a>
+        <a href="#courses">Courses</a>
         <a href="#categories">Subjects</a>
         <a href="pages/exam.html">Exam</a>
+        <a href="#sell-book">Sell Book</a>
         <a href="#about">Routine</a>
+        <a class="cart-link" href="#courses">Cart <span id="cartCount">0</span></a>
+        <button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch to light mode">
+          <span class="theme-icon" aria-hidden="true">☀</span>
+          <span class="theme-label">Light</span>
+        </button>
+        <button class="login-btn" type="button">Login</button>
       </nav>
     </header>
 
@@ -35,10 +43,12 @@
       <section class="hero">
         <div class="hero-content">
           <p class="eyebrow">BCS foundation masterclass</p>
-          <h1>Premium book library for serious BCS preparation.</h1>
-          <p class="hero-text">Browse subject-wise preparation books in a cinematic carousel, open detailed topic guides, and start a timed 20-question practice exam.</p>
+          <h1>Books, courses, and exams for focused BCS preparation.</h1>
+          <p class="hero-text">Study subject-wise books, join guided courses, preview free pages, and practice with timed MCQ exams from one clean dashboard.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#books">Browse Books</a>
+            <a class="btn btn-light" href="#courses">View Courses</a>
+            <a class="btn btn-ghost" href="#sell-book">Sell Book</a>
             <a class="btn btn-ghost" href="pages/exam.html">Start Exam</a>
           </div>
         </div>
@@ -82,10 +92,10 @@
       <section id="books" class="section library-section">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">Study library carousel</p>
-            <h2>BCS preparation books</h2>
+            <p class="eyebrow">Subject book library</p>
+            <h2>Browse preparation books</h2>
           </div>
-          <p>Movie-site inspired horizontal book shelves, redesigned for an educational platform with clear subjects, authors, and exam actions.</p>
+          <p>Use the subject tabs to switch between Bangla, English, Bangladesh Affairs, Science, Math, and more. Each tab shows related books in a clean grid.</p>
         </div>
 
         <div class="toolbar">
@@ -101,6 +111,11 @@
           </label>
         </div>
 
+        <div class="demo-tabs-block">
+          <h3>Study by <span>Subject</span></h3>
+          <div id="bookTabs" class="book-tabs" aria-label="Book subject tabs"></div>
+        </div>
+
         <div id="featuredBook" class="featured-book" aria-live="polite"></div>
 
         <div class="carousel-shell">
@@ -109,6 +124,77 @@
           <button class="carousel-btn carousel-btn-next" id="carouselNext" type="button" aria-label="Next books">&#8250;</button>
         </div>
         <div id="carouselDots" class="carousel-dots" aria-label="Book carousel pages"></div>
+      </section>
+
+      <section id="courses" class="section courses-section">
+        <div class="course-topbar">
+          <div>
+            <p class="eyebrow">Course marketplace</p>
+            <h2>BCS courses and live batches</h2>
+            <p>Filter by category or course type, sort by price, and add courses to your cart.</p>
+          </div>
+          <label class="select-box course-sort" for="courseSort">
+            <span>Sort</span>
+            <select id="courseSort">
+              <option value="default">Default Sorting</option>
+              <option value="low">Price: Low to High</option>
+              <option value="high">Price: High to Low</option>
+              <option value="lessons">Most Lessons</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="course-market">
+          <aside class="course-filter" aria-label="Course filters">
+            <h3>Filter</h3>
+            <div class="filter-group">
+              <strong>Select Category</strong>
+              <div id="courseCategoryFilters" class="filter-options"></div>
+            </div>
+            <div class="filter-group">
+              <strong>Course Type</strong>
+              <div id="courseTypeFilters" class="filter-options"></div>
+            </div>
+            <div class="filter-summary">
+              <span id="courseCount">0 Courses Found</span>
+              <button id="clearCourseFilters" class="text-btn" type="button">Clear filters</button>
+            </div>
+          </aside>
+
+          <div id="courseGrid" class="course-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section id="sell-book" class="section sell-section">
+        <div class="sell-copy">
+          <p class="eyebrow">Sell books</p>
+          <h2>List your BCS book for learners.</h2>
+          <p class="muted">Add a book title, subject, price, and condition. This demo saves the listing on the page so the flow is ready for a backend later.</p>
+        </div>
+        <form id="sellBookForm" class="sell-form">
+          <label class="field">
+            <span>Book Title</span>
+            <input id="sellBookTitle" type="text" placeholder="Example: BCS Bangla Guide" required>
+          </label>
+          <label class="field">
+            <span>Subject</span>
+            <input id="sellBookSubject" type="text" placeholder="Bangla, English, Math..." required>
+          </label>
+          <label class="field">
+            <span>Price</span>
+            <input id="sellBookPrice" type="number" min="1" placeholder="450" required>
+          </label>
+          <label class="field">
+            <span>Condition</span>
+            <select id="sellBookCondition">
+              <option>New</option>
+              <option>Like New</option>
+              <option>Used</option>
+            </select>
+          </label>
+          <button class="btn btn-primary" type="submit">Add Listing</button>
+          <p id="sellBookMessage" class="form-message" aria-live="polite"></p>
+        </form>
       </section>
 
       <section id="about" class="section split-section">
@@ -130,7 +216,7 @@
           </article>
           <article>
             <span>03</span>
-            <h3>Review weak topics s</h3> 
+            <h3>Review weak topics</h3>
             <p>Use wrong answers as a revision checklist for the next study block.</p>
           </article>
         </div>
