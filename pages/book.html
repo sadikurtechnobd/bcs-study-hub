@@ -42,12 +42,20 @@
               <span id="bookLevel" class="tag">Level</span>
             </div>
             <h1 id="bookTitle">Book title</h1>
-            <p id="bookAuthor" class="eyebrow">Author</p>
+            <div class="book-byline">
+              <span>Writer</span>
+              <strong id="bookAuthor">Author</strong>
+            </div>
             <p id="bookDescription">Book description</p>
           </div>
 
           <aside class="detail-actions">
+            <div class="price-box">
+              <span>Full book price</span>
+              <strong id="bookPrice">৳0</strong>
+            </div>
             <button id="startExam" class="btn btn-primary" type="button">Start Exam</button>
+            <a id="buyBookTop" class="btn btn-gold" href="#purchase">Purchase Book</a>
             <a class="btn btn-light" href="../index.html#books">Back to Books</a>
           </aside>
         </div>
@@ -62,6 +70,24 @@
           <p>Static placeholder topics are listed here now. Later, these can be loaded from an API by book ID.</p>
         </div>
         <ul id="topicList" class="topic-list"></ul>
+      </section>
+
+      <section class="section reader-section" aria-labelledby="previewHeading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Free preview</p>
+            <h2 id="previewHeading">Read 5 pages before purchase</h2>
+          </div>
+          <p>Open the book preview here, read the first five sample pages, then unlock the full book from the purchase bar below.</p>
+        </div>
+        <div id="pagePreview" class="page-preview"></div>
+        <div id="purchase" class="purchase-bar">
+          <div>
+            <span>Ready for the complete book?</span>
+            <strong id="purchaseTitle">Book title</strong>
+          </div>
+          <a id="purchaseBtn" class="btn btn-primary" href="#">Purchase Full Book</a>
+        </div>
       </section>
     </main>
 
